@@ -1,0 +1,11 @@
+/* pages/aboutUs/aboutUs.wxss */
+text{
+  font-size: 15px;
+  color: #969696;
+}
+.link{
+  color:aqua;
+}
+.active{
+  color:#969696;
+}

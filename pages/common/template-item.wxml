@@ -1,0 +1,19 @@
+<import src="../common/template-star.wxml"/>
+<template name="item1"> 
+   <view class="movie-item">
+    <navigator url="../dail/dail?id={{item.id}}">
+      <image src="{{ item.images.large }}" mode="aspectFill"></image>
+      <text>{{ item.title }}</text>
+      <template is="stars" data="{{stars:item.rating.stars/10,score:item.rating.average }}"></template>
+    </navigator>
+    </view>
+</template>
+<template name="item2"> 
+    <view class="movie-item">
+      <navigator url="../dail/dail?id={{item.subject.id}}">
+        <image src="{{ item.subject.images.large }}" mode="aspectFill"></image>
+        <text>{{ item.subject.title }}</text>
+        <template is="stars" data="{{stars:item.subject.rating.stars/10,score:item.subject.rating.average }}"></template>
+      </navigator>
+    </view>
+</template>

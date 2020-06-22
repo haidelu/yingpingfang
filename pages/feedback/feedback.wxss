@@ -1,0 +1,18 @@
+/* pages/feedback/feedback.wxss */
+.container textarea{
+  width: 680rpx;
+  border:1px solid #3fbc54;
+  border-radius: 40rpx;
+  padding:20rpx 20rpx;
+  color:#777;
+  font-weight:light;
+  font-size:38rpx;
+}
+.container button{
+  width:210rpx;
+  height:90rpx;
+  background-color: #3fbc54;
+  color:white;
+  margin-top:60rpx;
+  font-size:36rpx;
+}

@@ -1,0 +1,9 @@
+<import src="../common/template-board.wxml"/>
+
+<view>
+  <view class="board" scroll-y="true">
+    <block wx:for="{{ boards }}" wx:key="key">
+      <template is="item" data="{{item}}"></template>
+    </block>
+  </view>
+</view>

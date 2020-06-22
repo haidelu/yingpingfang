@@ -1,0 +1,122 @@
+.container{
+  padding:0;
+}
+.container .comBar{
+  width:100%;
+  height:110rpx;
+  line-height:110rpx;
+  position:fixed;
+  bottom:0;
+  left: 0;
+  border-top:1rpx solid #3fbc54;
+  font-size: 34rpx;
+  padding-top:20rpx;
+  box-sizing: border-box;
+  padding-left: 10rpx;
+  z-index: 1000;
+  background-color:#fff;
+}
+.container .comBar input{
+  width:550rpx;
+  height:70rpx;
+  border-radius: 70rpx;
+  border:1px solid #3fbc54;
+  padding:0 20rpx;
+  color:#222;
+}
+.container .comBar button{
+  width:130rpx;
+  height:66rpx;
+  line-height:66rpx;
+  background-color:#3fbc54;
+  position: absolute;
+  right: 10rpx;
+  bottom:18rpx;
+  text-align: 34rpx;
+  padding:0;
+  font-size: 34rpx;
+  color:white;
+  border-radius: 40rpx;
+}
+.movieDail{
+  width:100%;
+  display: flex;
+  flex: column;
+}
+.head-img {
+  width: 100%;
+  height: 380rpx;
+  background-color:#777;
+}
+.head-img-hover {
+  width: 100%;
+  height: 380rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+}
+.main-title {
+  font-size: 19px;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 170rpx;
+  margin-left: 290rpx;
+  letter-spacing: 2px;
+}
+.sub-title {
+  font-size: 28rpx;
+  color: #fff;
+  margin-left: 290rpx;
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: column;
+}
+.movie-img {
+  height: 280rpx;
+  width: 210rpx;
+  position: absolute;
+  top: 130rpx;
+  left: 40rpx;
+}
+
+.container .preComment{
+  width:100%;
+  box-sizing: border-box;
+  padding: 0 40rpx;
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top:80rpx;
+  color:#222;
+  padding-bottom: 100rpx;
+}
+.container .preComment>view{
+  width:670rpx;
+  display: flex;
+  flex-direction: column;
+  border-bottom:1px solid #ccc;
+}
+.container .preComment .user{
+  display: flex;
+  flex-direction: row;
+  margin-top:50rpx;
+}
+.container .preComment .user image{
+  width:90rpx;
+  height:90rpx;
+  border-radius: 50%;
+}
+.container .preComment .user text{
+  font-size:36rpx;
+  padding:30rpx 20rpx;
+  color:#333;
+}
+.container .preComment>view>text{
+  font-size:32rpx;
+  padding:18rpx 0 30rpx 50rpx;
+  display: inline-block;
+  color:#777;
+  font-weight: lighter;
+  line-height: 1.5;
+}

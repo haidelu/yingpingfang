@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/myPage/myPage",
+    "pages/search/search",
+    "pages/list/list",
+    "pages/board/board",
+    "pages/feedback/feedback",
+    "pages/aboutUs/aboutUs",
+    "pages/comment/comment",
+    "pages/dail/dail",
+    "pages/profile/profile"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#3fbc54",
+    "navigationBarTitleText": "影评仿",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#aaa"
+  },
+  "networkTimeout": {
+    "request": 60000
+  },
+  "tabBar": {
+    "color": "#aaa",
+    "selectedColor": "##3fbc54",
+    "backgroundColor": "white",
+    "list": [
+      {
+        "text": "榜单",
+        "pagePath": "pages/board/board",
+        "iconPath": "./img/home.png",
+        "selectedIconPath": "./img/home-actived.png"
+      },
+      {
+        "text": "搜索",
+        "pagePath": "pages/search/search",
+        "iconPath": "./img/search.png",
+        "selectedIconPath": "./img/search-actived.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/myPage/myPage",
+        "iconPath": "./img/profile.png",
+        "selectedIconPath": "./img/profile-actived.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "我们需要使用你的位置，以提供更好的服务"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,4 @@
+@import "../common/template-list.wxss";
+page{
+  height:100%;
+}

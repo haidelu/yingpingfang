@@ -1,0 +1,28 @@
+/**index.wxss**/
+page{
+  width: 100%;
+  height:100%;
+}
+.bg{
+  width: 100%;
+  height:100%;
+}
+.bg .bg-item{
+  width: 100%;
+  height:100%;
+}
+.bg .bg-item image{
+  height: 100%;
+  width: 100%;
+  opacity: 0.9;
+}
+.bt{
+  position:absolute;
+  width:220rpx;
+  bottom:110rpx;
+  left:50%;
+  margin-left: -110rpx;
+  color:white;
+  background: rgba(63, 188,64, 0.7);
+  font-size:30rpx;
+}

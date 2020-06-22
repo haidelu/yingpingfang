@@ -1,0 +1,2 @@
+<!--pages/aboutUs/aboutUs.wxml-->
+<text>本作品是由作者（蔡衛）在网上收集材料，用以学习以及实践。部分内容由原作者制作，本人就本人能力进行重新实现和改进，如果侵权请联系。</text><navigator hover-class="active" class="link" url="../profile/profile">点击查看原作者信息</navigator>

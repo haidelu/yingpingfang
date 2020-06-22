@@ -1,0 +1,15 @@
+<import src="template-item.wxml"/>
+<template name="movie-list">
+  <view class="list">
+    <template is="{{ item.subject ? 'item2' : 'item1' }}" data="{{ item }}" wx:for="{{ movies }}" wx:key="id" />
+    <view class="tips">
+      <view wx:if="{{ hasMore }}">
+        <image src="../../img/loading.gif" mode="aspectFill" />
+        <text>数据加载中...</text>
+      </view>
+      <view wx:else>
+        <text>没有更多内容了</text>
+      </view>
+    </view>
+  </view>
+</template>

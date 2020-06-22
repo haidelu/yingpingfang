@@ -1,0 +1,41 @@
+<view class="container">
+  <view class="title1">
+    <text>{{title}}</text>
+  </view>
+  <view class="about_">
+    <view>
+      <text class="title2">{{titleText}}</text>
+    </view>
+  </view>
+  <view class="title1">
+    <text>作者</text>
+  </view>
+  <view class="about_">
+    <text class="title2">{{author}}</text>
+  </view>
+  <view class="title1">
+    <text>Github</text>
+  </view>
+  <view class="about_">
+    <text class="title2">{{github}}</text>
+  </view>
+  <view class="title1">
+    <text>个人主页</text>
+  </view>
+  <view class="about_">
+    <text class="title2">{{myHomepage}}</text>
+  </view>
+  <view class="title1">
+    <text>公众号</text>
+  </view>
+  <view class="about_">
+    <text class="title2">{{dskbDhz}}</text>
+  </view>
+  <view class="title1">
+    <text>联系</text>
+  </view>
+  <view class="contact">
+    <text>点击二维码，保存到相册，扫一扫即可</text>
+    <image src="{{khcode}}" bindtap="imgTap"></image>
+  </view>
+</view>

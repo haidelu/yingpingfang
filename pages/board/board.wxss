@@ -1,0 +1,9 @@
+@import "../common/template-board.wxss";
+
+.board{
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+}
+.block{
+  width:100%;
+}

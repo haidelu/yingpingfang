@@ -1,0 +1,20 @@
+.starsContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.starsContainer .stars{
+  display: flex;
+  flex-direction:row;
+  height:17rpx;
+  margin-right: 24rpx;
+  margin-left: 6rpx;
+  margin-top: 6rpx;
+}
+.starsContainer .stars image{
+  width:17rpx;
+  height:17rpx;
+}
+.starsContainer text{
+  color:#1f3463;
+}

@@ -1,0 +1,25 @@
+<import src="../common/template-item.wxml"/>
+<template name="item">
+  <view class="board-item">
+    <navigator url="../list/list?type={{ item.key }}&title={{ item.title }}" hover-class="none">
+      <view class="title">
+        <text>{{item.title}}</text>
+        <view>更多
+          <image src="../../img/arrowright.png" mode="aspectFill"></image>
+        </view>
+      </view>     
+    </navigator>
+    <scroll-view class="content" scroll-x="true" >
+      <view class="inner" wx:if="{{ item.title !== '豆瓣电影北美票房榜'}}">
+        <navigator wx:for="{{item.movies}}" wx:key="id" url="../dail/dail?id={{item.id}}">
+          <template is="item1" data="{{item}}"></template>
+        </navigator>
+      </view>     
+      <view class="inner" wx:else>
+        <navigator wx:for="{{item.movies}}" wx:key="id" url="../dail/dail?id={{item.subject.id}}">
+          <template is="item2" data="{{ item }}"></template>
+        </navigator>
+      </view>       
+    </scroll-view>
+  </view>
+</template>

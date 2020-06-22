@@ -1,0 +1,7 @@
+<import src="../common/template-list" />
+<view class="container">
+  <view class="header">
+    <input class="search" placeholder="{{ subtitle }}" placeholder-class="search-placeholder" bindchange="handleSearch"/>
+  </view>
+  <template is="movie-list" data="{{movies,hasMore}}"></template>
+</view>

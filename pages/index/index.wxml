@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<swiper class="bg" 
+indicator-dots="{{indicatorDots}}" indicator-color="{{indicatorColor}}"   indicator-active-color="{{indicatorActiveColor}}" 
+bindchange="swiperChange" bindanimationfinish="swiperAnimationFinish">
+  <swiper-item wx:for="{{movies}}" class="bg-item" wx:key="index"
+  item-id="{{index}}" >
+    <image src="{{item.images.large}}" mode="aspectFill"/> 
+  </swiper-item>
+</swiper>
+<button class="bt" bindtap="handleStart" wx:if='{{loading}}'>立即进入</button>
+<view wx:for="{{[0,0,0,0]}}" wx:key="index">
+  <block>1</block>
+</view>

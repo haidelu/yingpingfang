@@ -1,0 +1,24 @@
+<!--pages/myPage/myPage.wxml-->
+<view>
+  <view class="userInfo">
+    <button class="box" bindtap="getUserHandle" open-type="getUserInfo">
+      <block wx:if="{{userInfo}}">
+        <image src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text>{{userInfo.nickName}}</text>        
+      </block>
+      <block wx:else>
+        <image src="../../img/profile.png" mode="cover"></image>
+        <text>点击登录</text>
+      </block>
+    </button>
+  </view>
+  <view class="myCom" bindtap="myComHandle">
+    <navigator url="../list/list?categray=myLikedail&title=我喜欢的电影"> <text>我喜欢的电影</text></navigator>
+    <navigator url="../list/list?categray=mySeendail&title=我看过的电影"> <text>我看过的电影</text></navigator>
+    <navigator url="../list/list?categray=myWantdail&title=我想看的电影"> <text>我想看的电影</text></navigator>
+  </view>
+  <view class="about">
+    <navigator url="../feedback/feedback"><text>反馈</text></navigator>
+    <navigator url="../aboutUs/aboutUs"><text>关于我们</text></navigator>
+  </view>
+</view>

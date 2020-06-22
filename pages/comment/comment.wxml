@@ -1,0 +1,31 @@
+<!--pages/comment/comment.wxml-->
+<view class="container">
+  <view class="comBar">
+    <form bindsubmit="bindFormSubmit">
+      <input placeholder="请输入内容" name="comText"/>
+      <button form-type="submit"> 发送 </button>
+    </form>
+  </view>
+  <view class="movieDail">
+    <image class="head-img" src="{{movie.images.large}}" mode="aspectFill"/>
+    <view class="head-img-hover">
+      <text class="main-title">{{movie.title}}</text>
+      <view class="sub-title">
+        <block wx:for="{{movie.countries}}" wx:key="index">
+          {{item+" · "}}
+        </block>
+        {{movie.year}}
+      </view>
+    </view>
+    <image class="movie-img" src="{{movie.images.large}}" data-src="{{movie.images.large}}" bindtap="viewPostImg"/>
+  </view>
+  <view class="preComment">
+    <view wx:for="{{movie.popular_reviews}}" wx:key="index">
+      <view class="user">
+        <image src="{{item.author.avatar}}" mode="cover"></image>
+        <text>{{item.author.name}}</text>   
+      </view>
+      <text>{{item.summary}}</text>
+    </view>
+  </view>
+</view>
